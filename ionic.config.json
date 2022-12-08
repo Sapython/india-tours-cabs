@@ -1,5 +1,7 @@
 {
-  "name": "ionic-app-base",
-  "integrations": {},
+  "name": "india-tours",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
