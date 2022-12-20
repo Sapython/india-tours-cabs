@@ -1,0 +1,78 @@
+<div id="main_container">
+  <div id="content_container">
+    <div class="cancel_btn_div">
+      <img src="../../assets/icon/xbtn.svg" alt="x">
+    </div>
+    <div class="content_div">
+      <div class="content_div_header">
+        <h1>Taxi Booking</h1>
+        <p>(If you want to book a vehicle for a destination)</p>
+      </div>
+      <div class="destination_data">
+        <h1>Enter Your Destination</h1>
+        <div>
+          <form>
+            <div>
+              <img class="to_fr_cal" src="../../assets/icon/toIcon.svg" alt="To Icon" />
+              <ion-input class="custom" placeholder="To"></ion-input>
+              <img src="../../assets/icon/optIcon.svg" alt="Options icon" />
+            </div>
+            <div>
+              <img class="to_fr_cal" src="../../assets/icon/toIcon.svg" alt="From Icon" />
+              <ion-input class="custom" placeholder="From"></ion-input>
+              <img src="../../assets/icon/SwitchIcon.svg" alt="Switch Icon">
+            </div>
+            <div>
+              <img class="to_fr_cal" src="../../assets/icon/calIcon.svg" alt="calender" />
+              <ion-input type="date" class="custom" placeholder="Pickup Date"></ion-input>
+            </div>
+            <ion-button fill="none">Search</ion-button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      <img class="footer_main_img" src="../../assets/icon/flower.svg" alt="flower" />
+      <div>
+        <div>
+          <div class="footer_div">
+            <img src="../../assets/icon/lsf.svg" alt="left flower">
+            <img src="../../assets/icon/rsf.svg" alt="right flower">
+          </div>
+        </div>
+        <div>
+          <section *ngIf="section1">
+            <h2 (click)="cfr()">choose from recent</h2>
+          </section>
+          <section class="details" *ngIf="section2">
+            <h2 (click)="details()">choose from recent</h2>
+            <div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
