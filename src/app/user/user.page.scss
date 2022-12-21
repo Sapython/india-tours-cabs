@@ -19,33 +19,68 @@ div {
       }
       .header_bottom {
         margin: auto;
+        padding-bottom: 0.5rem;
         width: 90%;
         align-items: flex-end;
         border-bottom: 1px solid #e2e2e2;
-
-        // .user {
-        //   border: 1px solid #000000;
-        //   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        //   border-radius: 15px;
-        // }
+        .camel {
+          margin-bottom: 0.4rem;
+        }
         .user_div {
-          background: linear-gradient(
-              317.7deg,
-              rgba(0, 0, 0, 0.4) 0%,
-              rgba(255, 255, 255, 0.4) 105.18%
-            ),
-            #eaecf0;
-          background-blend-mode: soft-light, normal;
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          box-shadow: inset -5px -5px 8px #f9fcff,
-            inset 5px 5px 7px rgba(174, 174, 192, 0.75);
-          border-radius: 29.5px;
-          // .user_inner_div {
-          //   z-index: 100;
-          //   position: relative;
-          //   background-image: url(../../assets/userProfileImg.png);
+          // border: 1px solid #000000;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          border-radius: 50px;
+          width: 120px;
+          height: 120px;
+          position: relative;
+          .user_inner_div_1 {
+            background: linear-gradient(
+                317.7deg,
+                rgba(0, 0, 0, 0.4) 0%,
+                rgba(255, 255, 255, 0.4) 105.18%
+              ),
+              #eaecf0;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: inset -5px -5px 8px #f9fcff,
+              inset 5px 5px 7px rgba(174, 174, 192, 0.75);
+            border-radius: 29.5px;
 
-          // }
+            // .user_inner_div_2 {
+            //   width: 100px;
+            //   height: 100px;
+            //   .user_inner_div_3 {
+            //     background: linear-gradient(
+            //         138.32deg,
+            //         rgba(0, 0, 0, 0.5) 8.26%,
+            //         rgba(255, 255, 255, 0.5) 91.02%
+            //       ),
+            //       #eaecf0;
+            //     background-blend-mode: soft-light, normal;
+            //     border: 1px solid rgba(255, 255, 255, 0.4);
+            //     box-shadow: -5px -5px 8px #f2f4f8,
+            //       5px 5px 7px rgba(174, 174, 192, 0.5);
+            //     border-radius: 23.4899px;
+
+            img {
+              // position: absolute;
+              display: block;
+              margin: 0.6rem auto 0.5rem auto;
+              border: 1px solid #000000;
+              border-radius: 15px;
+
+              // top: 0;
+              // bottom: 0%;
+              // left: 4rem;
+              // background-image: url(../../assets/userProfileImg.png);
+              // position: relative;
+              // z-index: 200;
+              // background-position: center;
+              // background-repeat: no-repeat;
+            }
+            // }
+            // }
+          }
         }
       }
     }
