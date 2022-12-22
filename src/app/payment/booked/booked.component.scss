@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+.main-container{
+    padding: 20px ;
+    .heading{
+        h1{
+            font-family: 'Baloo Tammudu 2', cursive;
+            font-size: 34px;
+            text-align: center;
+            border-bottom: 1px solid #E2E2E2;
+        }
+    }
+    
+    .bio{
+        text-align: center;
+        p{
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+    
+    .map{
+        text-align: center;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -9px -8px 13px #F2F4F8, 8px 8px 13px rgba(174, 174, 192, 0.5);
+        border-radius: 13px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .time{
+        ion-label{
+            font-family: 'Baloo Tammudu 2', cursive;
+            color: darkgrey;
+        }
+    }
+    
+    .driver{
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -9px -8px 13px #F2F4F8, 8px 8px 13px rgba(174, 174, 192, 0.5);
+        border-radius: 13px;
+        display: flex;
+        padding: 10px;
+
+        .img{
+            img{
+                height: 80px;
+                width: 120px;
+            }
+        }
+
+        .biodata{
+            margin-top: 10px;
+            margin-left: 10px;
+            // border: 2px solid red;
+            width: 100%;
+            #name{
+                font-size: 18px;
+                margin: 0;
+                color: orange;
+                padding: 0;
+                // font-family: 'Baloo Tammudu 2', cursive;
+            }
+            #bio-data{
+                // font-family: 'Baloo Tammudu 2', cursive;
+                font-size: 12px;
+                margin: 0;
+                padding: 0;
+            }
+            #number{
+                text-align: right;
+                justify-content: right;
+                font-size: 12px;
+                color: darkgrey;
+            }
+        }
+    }
+
+    .btn{
+        justify-content: center;
+        text-align: center;
+        // margin: 25px 50px;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 10px;
+        // border: 2px solid blue;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        width: 100%;
+        
+        ion-button{
+            // border: 2px solid green;
+            width: 100%;
+            font-size: 16px;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+}
