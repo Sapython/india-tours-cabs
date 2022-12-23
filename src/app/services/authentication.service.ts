@@ -9,16 +9,16 @@ import {
   signInWithPopup,
   signOut,
   UserCredential,
-} from "@angular/fire/auth";
+} from '@angular/fire/auth';
 import { Router } from '@angular/router';
-import { map } from "rxjs";
+import { map } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthenticationService {
   user: any;
-  constructor(private auth: Auth, private route: Router){ }
+  constructor(private auth: Auth, private route: Router) {}
 
   googleLogin() {
     signInWithPopup(this.auth, new GoogleAuthProvider()).then(
