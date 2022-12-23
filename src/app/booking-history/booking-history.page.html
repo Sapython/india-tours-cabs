@@ -1,0 +1,89 @@
+<div id="main_container">
+  <div id="content_container">
+    <div class="cancel_btn_div">
+      <!-- <ion-button fill="none" class="cancel_btn">x</ion-button> -->
+      <img src="../../assets/icon/xbtn.svg" alt="x">
+    </div>
+    <div class="content_div">
+      <div class="content_div_header">
+        <h1>SUV</h1>
+        <img src="../../assets/car.png" alt="car">
+      </div>
+      <div class="data_div">
+        <div class="all_data">
+          <div class="data">
+            <p>Pickup Date</p>
+            <h6 class="detail">13 November 2022</h6>
+          </div>
+          <div class="data">
+            <p>From</p>
+            <div class="detail">
+              <img style="margin-top: -0.6rem; margin-right: 0.2rem;"
+                src="../../assets/cross.svg" />
+              <h6>Chandigarh</h6>
+            </div>
+          </div>
+          <div class="data">
+            <p>To</p>
+            <div class="detail">
+              <img style="margin-top: -0.6rem; margin-right: 0.2rem;"
+                src="../../assets/location.svg" />
+              <h6>Chandigarh</h6>
+            </div>
+          </div>
+          <div class="data">
+            <p>Price</p>
+            <h6 class="detail">$1234</h6>
+          </div>
+          <div class="data">
+            <p class="book_p">Booked on</p>
+            <h6 class="detail">13 November 2022</h6>
+          </div>
+        </div>
+        <ion-button fill="none">Download Booking</ion-button>
+      </div>
+    </div>
+    <footer>
+      <img class="footer_main_img" src="../../assets/icon/flower.svg" alt="flower" />
+      <div>
+        <div>
+          <div class="footer_div">
+            <img src="../../assets/icon/lsf.svg" alt="left flower">
+            <img src="../../assets/icon/rsf.svg" alt="right flower">
+          </div>
+        </div>
+        <div>
+          <section *ngIf="section1">
+            <h2 (click)="cfr()">Recent</h2>
+          </section>
+          <section class="details" *ngIf="section2">
+            <h2 (click)="details()">Recent</h2>
+            <div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+              <div class="details_data">
+                <img src="../../assets/icon/toIcon.svg" alt="arrow">
+                <div>
+                  <h4>7th St Mission</h4>
+                  <p>Jaipur, Rajasthan</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

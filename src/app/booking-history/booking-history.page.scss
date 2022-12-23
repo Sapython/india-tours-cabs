@@ -1,0 +1,171 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#main_container {
+  background-color: #212638;
+  height: 100%;
+  font-family: "Baloo Tammudu 2";
+  overflow-y: scroll;
+
+  #content_container {
+    overflow-y: scroll;
+    background: #f0f0f3;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    height: 100%;
+    z-index: 100;
+    margin-top: 2rem;
+
+    .cancel_btn_div {
+      width: 70%;
+      margin: auto;
+      text-align: center;
+      border-bottom: 1px solid #e2e2e2;
+      .cancel_btn {
+        margin: 1.4rem 0;
+      }
+    }
+
+    .content_div {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+
+      .content_div_header {
+        h1 {
+          margin-top: 1rem;
+          font-weight: 600;
+          font-size: xx-large;
+        }
+        img {
+          margin: -1.5rem 0 -8.8rem 0;
+        }
+      }
+      .data_div {
+        background: linear-gradient(
+            138.32deg,
+            rgba(0, 0, 0, 0.5) 8.26%,
+            rgba(255, 255, 255, 0.5) 91.02%
+          ),
+          #eaecf0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -9px -8px 13px #f2f4f8,
+          8px 8px 13px rgba(174, 174, 192, 0.5);
+        border-radius: 13px;
+
+        .all_data {
+          border-top: 1px solid #e2e2e2;
+          padding: 1.4rem 0;
+          margin-top: 5.2rem;
+
+          .data {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+
+            .detail {
+              background: linear-gradient(180deg, #ebedf0 0%, #f2f4f6 100%);
+              border: 2px solid #e2e2e2;
+              box-shadow: inset -5px -5px 10px -2px rgba(255, 255, 255, 0.5);
+              border-radius: 8px;
+              width: 50%;
+              display: flex;
+              padding: 0.4rem 0 0 0.5rem;
+              align-items: center;
+              // justify-content: center;
+              color: #9d9d9d;
+            }
+            .book_p {
+              color: #383a69 !important;
+              font-family: "Alegreya Sans";
+            }
+          }
+        }
+        ion-button {
+          background: linear-gradient(
+              138.32deg,
+              rgba(0, 0, 0, 0.5) 8.26%,
+              rgba(255, 255, 255, 0.5) 91.02%
+            ),
+            #eaecf0;
+          display: block;
+          text-transform: capitalize;
+          font-family: "Questrial", sans-serif;
+          font-weight: 400;
+          background-blend-mode: soft-light, normal;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          box-shadow: -5px -5px 8px #f2f4f8,
+            5px 5px 7px rgba(174, 174, 192, 0.5);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          margin: 0.2rem auto 1rem auto;
+          font-weight: 600;
+          font-size: 1.1rem;
+          line-height: 1rem;
+          border-radius: 10px;
+          width: 60%;
+        }
+      }
+    }
+    footer {
+      margin-top: 2rem;
+      margin-bottom: 0 !important;
+      .footer_main_img {
+        margin: auto;
+        display: block;
+      }
+      div {
+        position: relative;
+        div {
+          .footer_div {
+            margin-top: -0.6rem;
+            display: flex;
+            z-index: 100;
+            justify-content: space-between;
+          }
+        }
+        div {
+          section {
+            position: absolute;
+            top: calc(50% - 20px / 2 - 20px);
+            background-color: white;
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            width: 100%;
+            box-shadow: -4px -4px 40px 2px rgba(0, 0, 0, 0.1);
+            h2 {
+              font-family: "Baloo Tammudu 2";
+              font-weight: 700;
+              font-size: 24px;
+              text-align: center;
+              padding: 1.5rem 0 0.6rem 0;
+            }
+            div {
+              .details_data {
+                display: flex;
+                width: 80%;
+                align-self: center;
+                margin: 1rem auto 0 auto;
+                border-bottom: 1px solid rgba(108, 112, 125, 0.3);
+
+                div {
+                  display: flex;
+                  flex-direction: column;
+                  margin-left: 0.5rem;
+                  h4 {
+                    margin-bottom: -0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
