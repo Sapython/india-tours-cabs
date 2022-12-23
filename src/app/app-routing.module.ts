@@ -81,6 +81,13 @@ const routes: Routes = [
         (m) => m.TaxiDetailssPageModule
       ),
   },
+  {
+    path: 'taxi-booking',
+    loadChildren: () =>
+      import('./taxi-booking/taxi-booking.module').then(
+        (m) => m.TaxiBookingPageModule
+      ),
+  },
 ];
 
 @NgModule({
