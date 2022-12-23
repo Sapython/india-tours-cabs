@@ -18,10 +18,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  {
-    path: 'taxi-booking',
-    loadChildren: () => import('./taxi-booking/taxi-booking.module').then( m => m.TaxiBookingPageModule)
-  },
+  
   {
     path: 'booking-history',
     loadChildren: () => import('./booking-history/booking-history.module').then( m => m.BookingHistoryPageModule)
@@ -54,13 +51,14 @@ const routes: Routes = [
     path: 'home-main',
     loadChildren: () => import('./home-main/home-main.module').then( m => m.HomeMainPageModule)
   },
-  {
-    path: 'taxi-booking',
-    loadChildren: () => import('./taxi-booking/taxi-booking.module').then( m => m.TaxiBookingPageModule)
-  },
+  
   {
     path: 'review-page',
     loadChildren: () => import('./review-page/review-page.module').then( m => m.ReviewPagePageModule)
+  },
+  {
+    path: 'taxi-detailss',
+    loadChildren: () => import('./taxi-detailss/taxi-detailss.module').then( m => m.TaxiDetailssPageModule)
   },
 
 ];
