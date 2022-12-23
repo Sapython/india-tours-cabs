@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TaxiBookingPageRoutingModule } from './taxi-booking-routing.module';
+import { HomeMainPageRoutingModule } from './home-main-routing.module';
 
-import { TaxiBookingPage } from './taxi-booking.page';
+import { HomeMainPage } from './home-main.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TaxiBookingPageRoutingModule
+    HomeMainPageRoutingModule
   ],
-  declarations: [TaxiBookingPage]
+  declarations: [HomeMainPage]
 })
-export class TaxiBookingPageModule {}
+export class HomeMainPageModule {}

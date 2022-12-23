@@ -1,0 +1,164 @@
+.main-container {
+    // text-align: center;
+    // height: max-content;
+    max-height: auto;
+    width: 100%;
+    overflow: scroll;
+.first {
+  display: flex;
+  margin-top: 20px;
+  .btn {
+    display: flex;
+    justify-content: start;
+    ion-button {
+      --background: #edeff2;
+      --color: #c6cbdb;
+
+      background-blend-mode: soft-light, normal;
+      /* n-stroke */
+
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      /* n-5-5-10-out */
+
+      box-shadow: -5px -5px 8px #f2f4f8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+      border-radius: 6px;
+    }
+  }
+  .txt {
+    width: 100%;
+    p {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      // font-family: "Baloo Tammudu 2";
+      // font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      /* line-height: 42px; */
+      /* text-align: center; */
+      letter-spacing: -0.408px;
+      color: #383a69;
+      margin: 8px;
+    }
+  }
+}
+.sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  .box {
+    p {
+      display: flex;
+      justify-content: center;
+    }
+    width: 80%;
+    text-align: center;
+    background: linear-gradient(
+        138.32deg,
+        rgba(0, 0, 0, 0.5) 8.26%,
+        rgba(255, 255, 255, 0.5) 91.02%
+      ),
+      #eaecf0;
+    background-blend-mode: soft-light, normal;
+    /* n-stroke */
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* n-5-5-10-out */
+
+    box-shadow: -5px -5px 8px #f2f4f8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+    border-radius: 10px;
+  }
+}
+.graphics {
+    position: relative;
+  .l-img {
+    img {
+      position: absolute;
+      top: -88px;
+      left: 4px;
+    }
+  }
+  .r-img {
+    img {
+      position: absolute;
+      top: -88px;
+      left: 282px;
+    }
+  }
+}
+.third {
+    margin-top: 20px;
+  .box {
+    background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #FFFFFF;
+background-blend-mode: soft-light, normal;
+/* n-stroke */
+
+border: 1px solid rgba(255, 255, 255, 0.4);
+/* n-8-8-13-out */
+
+box-shadow: -9px -8px 13px #F2F4F8, 8px 8px 13px rgba(174, 174, 192, 0.5);
+border-radius: 13px;
+    margin: 10px;
+    padding: 8px;
+    .f-line {
+      display: flex;
+      justify-content: space-between;
+      .txt {
+        margin-left: -48px;
+    margin-top: 2px;
+        p {
+          margin: 3px 1px;
+          color: #000000;
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          text-indent: 1px;
+        }
+      }
+      .mini-box {
+        margin-top: 6px;
+        border: 1px solid #383a69;
+        height: 25px;
+        border-radius: 15px;
+        padding: 0 5px;
+        background: rgba(56, 58, 105, 0.15);
+        p {
+          margin: 7px 1px;
+          color: #383a69;
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 11px;
+          text-indent: 1px;
+        }
+      }
+    }
+    .s-line{
+        p{
+            font-size: 14px;
+        }
+    }
+    .t-line{
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        ion-icon{
+            color: red;
+        }
+        span{
+            font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px;
+text-indent: 1px;
+margin-top: 4px;
+color: #707477;
+        }
+    }
+  }
+}
+}
