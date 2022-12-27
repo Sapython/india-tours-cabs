@@ -6,6 +6,8 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'registration',
+    // redirectTo: 'renting',
+    // redirectTo: 'outstation',
     // redirectTo: 'payment',
     pathMatch: 'full',
     // path: 'home',
@@ -34,12 +36,6 @@ const routes: Routes = [
     path: 'user',
     loadChildren: () =>
       import('./user/user.module').then((m) => m.UserPageModule),
-  },
-  {
-    path: 'home',
-    loadChildren: () =>
-      import('./home/home.module').then((m) => m.HomePageModule),
-    // canActivate: [AuthGuard]
   },
   {
     path: 'registration',
@@ -88,6 +84,16 @@ const routes: Routes = [
         (m) => m.TaxiBookingPageModule
       ),
   },
+  {
+    path: 'renting',
+    loadChildren: () => import('./renting/renting.module').then( m => m.RentingPageModule)
+  },
+  {
+    path: 'outstation',
+    loadChildren: () => import('./outstation/outstation.module').then( m => m.OutstationPageModule)
+  },
+
+
 ];
 
 @NgModule({

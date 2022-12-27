@@ -1,8 +1,12 @@
 <div id="main_container">
-  <div id="content_container">
+  <div id="content_container"  class="uk-animation-slide-bottom">
     <div class="cancel_btn_div">
-      <img src="../../assets/icon/xbtn.svg" alt="x">
-    </div>
+      <!-- <img src="../../assets/icon/xbtn.svg" alt="x" routerLink="/home-main"> -->
+      <div class="btn" routerLink="/home-main">
+        <ion-button color="primary-contrast" style="border-radius: 50px;">
+          <span>x</span>
+        </ion-button>
+      </div>
     <div class="content_div">
       <div class="content_div_header">
         <h1>Taxi Booking</h1>
@@ -26,7 +30,7 @@
               <img class="to_fr_cal" src="../../assets/icon/calIcon.svg" alt="calender" />
               <ion-input type="date" class="custom" placeholder="Pickup Date"></ion-input>
             </div>
-            <ion-button fill="none">Search</ion-button>
+            <ion-button fill="none" routerLink="/taxi-detailss">Search</ion-button>
           </form>
         </div>
 

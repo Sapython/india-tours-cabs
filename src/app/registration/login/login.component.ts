@@ -24,18 +24,13 @@ export class LoginComponent implements OnInit {
     if(this.loginForm.valid){
       this.auth.emailLogin(this.loginForm.value.email, this.loginForm.value.password)
         .then(()=>{
-          this.route.navigate(['/home/Home']);
+          this.route.navigate(['/get-started']);
           this.loginForm.reset();
           // alert("Signed In");
         })
         .catch((error) => alert("Enter Correct Sign In"))
     }else{
       alert("Invalid Login Credentials") 
-      // if(this.loginForm.value.email == 0 && this.loginForm.value.password==0){
-      //   alert("Enter login Details")
-      // }else{
-      //   alert("Enter Correct Details")
-      // }
     }
     this.loginForm.reset();
   }

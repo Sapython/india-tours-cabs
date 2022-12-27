@@ -13,6 +13,7 @@
     </div>
   </div>
 
+  <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
   <div class="footer">
       <form [formGroup]="loginForm">
         <thead>
@@ -35,11 +36,12 @@
       </form>
       <div class="forget">
         <p>Didn't get a code?</p>
-        <p style="color: orange;text-decoration: underline;">Resend code</p>
+        <span style="color: orange;text-decoration: underline; ">Resend code</span>
       </div>
 
       <div class="btn">
         <ion-button fill="none" (click)="submit()" routerLink="/registration/otp" routerLink="/registration/reset">Continue</ion-button>
       </div>
+  </div>
   </div>
 </div>

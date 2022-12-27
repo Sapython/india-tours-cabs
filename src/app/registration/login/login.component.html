@@ -10,43 +10,45 @@
       <!-- <img src="assets/animations/Frame.gif" alt=""> -->
     </div>
     
-    <div class="right">
+    <div class="right"> 
       <img src="assets/img/RightLogo.svg">
     </div>
-  </div>
+  </div> 
 
-  <div class="footer">
-      <form [formGroup]="loginForm">
-        <thead>
-          <h1>Login</h1>
-        </thead>
-
-        <tbody>
-          <ion-item>
-            <ion-input type="email" formControlName="email" class="custom" placeholder="  Email"></ion-input>
-          </ion-item>
+  <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
+    <div class="footer">
+        <form [formGroup]="loginForm">
+          <thead>
+            <h1>Login</h1>
+          </thead>
   
-          <ion-item>
-            <ion-input type="password" formControlName="password" class="custom" placeholder="  Password"></ion-input>
-          </ion-item>
-        </tbody>
-      
-      </form>
-      <div class="forget" routerLink="/registration/forgot">
-        <p>Forgot Password?</p>
-      </div>
-
-      <div class="btn">
-        <ion-button fill="none" (click)="submit()">Log in</ion-button>
-      </div>
-
-      <div class="signup" routerLink="/registration/signup">
-        <p>Don't have an Account? </p><p style="color: orange;">&nbsp;Sign up</p>
-      </div>
-
-      <div class="google" (click)="googleSignup()">
-        <img src="assets/img/Google.png" alt="">
-        <p>or use your Google account</p>
-      </div>
+          <tbody>
+            <ion-item>
+              <ion-input type="email" formControlName="email" class="custom" placeholder="  Email"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-input type="password" formControlName="password" class="custom" placeholder="  Password"></ion-input>
+            </ion-item>
+          </tbody>
+        
+        </form>
+        <div class="forget" routerLink="/registration/forgot">
+          <p>Forgot Password?</p>
+        </div>
+  
+        <div class="btn">
+          <ion-button fill="none" (click)="submit()">Log in</ion-button>
+        </div>
+  
+        <div class="signup" routerLink="/registration/signup">
+          <p>Don't have an Account? </p><span style="color: orange;">&nbsp;Sign up</span>
+        </div>
+  
+        <div class="google" (click)="googleSignup()">
+          <img src="assets/img/Google.png" alt="">
+          <p>or use your Google account</p>
+        </div>
+    </div>
   </div>
 </div>

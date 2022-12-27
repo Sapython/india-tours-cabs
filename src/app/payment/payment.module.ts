@@ -21,6 +21,7 @@ import { BookedComponent } from './booked/booked.component';
     FormsModule,
     IonicModule,
     PaymentPageRoutingModule,
+    
   ],
   exports: [
     CarsComponent,

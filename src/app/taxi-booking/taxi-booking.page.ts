@@ -14,6 +14,8 @@ export class TaxiBookingPage implements OnInit {
   ngOnInit() {}
   cfr() {
     this.section2 = !this.section2;
+    console.log("cfr works");
+    
   }
   details() {
     this.section2 = !this.section2;

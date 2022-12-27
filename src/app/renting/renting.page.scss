@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+
+.main-container {
+    height: 100%;
+    background-color: #212638;
+
+    .page {
+        height: 97%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #F0F0F3;
+        border-radius: 40px 40px 0 0;
+        max-height: 700px;
+        overflow-y: scroll;
+
+        .btn {
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+
+            ion-button {
+                width: 46.98px;
+                height: 46.98px;
+                --border-radius: 50px !important;
+
+                span {
+                    color: orange;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .heading {
+            margin-top: 5px;
+
+            // border: 1px solid green;
+            h1 {
+                font-family: 'Ubuntu', sans-serif;
+                text-align: center;
+                font-size: 24px;
+                margin: 0;
+            }
+
+            h3 {
+                font-family: 'GFS Neohellenic', sans-serif;
+                text-align: center;
+                color: darkgray;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+
+        .pickup {
+            padding: 0;
+            margin: 0 25px;
+            margin-top: 5px;
+
+            h3 {
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 14px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .location {
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                padding: 0 2px 0 10px;
+                margin-top: 20px;
+                display: flex;
+                background-color: #F0F0F3;
+
+                input {
+                    outline: none;
+                    border: none;
+                    font-family: 'GFS Neohellenic', sans-serif;
+                    width: 100%;
+                    padding: 10px 0;
+                    background-color: #F0F0F3;
+                }
+            }
+
+            .date {
+                margin: 20px 0;
+
+                h3 {
+                    text-align: left;
+                }
+
+                .input {
+                    display: flex;
+                    margin: 10px 0;
+                    justify-content: space-between;
+                    color: darkgray;
+                    // uncomment for date and time logo
+                    // input{
+                    //     outline:none;
+                    //     border: none;
+                    // }
+                }
+
+                input {
+                    border: 1px solid lightgray;
+                    font-family: 'GFS Neohellenic', sans-serif;
+                    padding: 10px;
+                    border-radius: 10px;
+                    width: 45%;
+                    background-color: #F0F0F3;
+                }
+
+            }
+
+            .package {
+                h3 {
+                    text-align: left;
+                }
+
+                .input {
+                    display: flex;
+                    border: 1px solid lightgray;
+                    padding: 0 2px 0 10px;
+                    border-radius: 10px;
+                    margin-top: 10px;
+
+                    input {
+                        border: 0;
+                        background-color: #F0F0F3;
+                        width: 100%;
+                        font-family: 'GFS Neohellenic', sans-serif;
+                    }
+                }
+            }
+
+            .assist {
+                font-family: 'GFS Neohellenic', sans-serif;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                margin: 20px 0;
+                padding: 15px 0 0 0;
+                
+                .heading {
+                    font-family: 'GFS Neohellenic', sans-serif;
+                    
+                    h3 {
+                        color: #000;
+                        font-size: 14px;
+                    }
+                    
+                    p {
+                        font-size: 12px;
+                        color: darkgray;
+                        text-align: center;
+                    }
+                }
+
+                .button {
+                    justify-content: center;
+                    text-align: center;
+                    margin-top: 20px;
+                    
+                    ion-button {
+                        --border-radius: 12px !important;
+                        height: 40px;
+                        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+                        background-blend-mode: soft-light, normal;
+                        border: 1px solid rgba(255, 255, 255, 0.4);
+                        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+                        border-radius: 20px;
+                        
+                        span {
+                            color: #000;
+                            font-weight: bolder;
+                            font-family: 'GFS Neohellenic', sans-serif;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .upload {
+                    text-align: center;
+                    margin-top: 20px;
+                    
+                    ion-button {
+                        --border-radius: 12px !important;
+                        height: 40px;
+                        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+                        background-blend-mode: soft-light, normal;
+                        border: 1px solid rgba(255, 255, 255, 0.4);
+                        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+                        border-radius: 20px;
+                        width: 40%;
+                        
+                        input {
+                            color: #000;
+                            font-weight: bolder;
+                            font-family: 'GFS Neohellenic', sans-serif;
+                            font-size: 14px;
+                            border: none;
+                            text-indent: -999em;
+                            // display: none;
+                        }
+                        
+                        span {
+                            color: black;
+                            font-family: 'GFS Neohellenic', sans-serif;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .search {
+                    text-align: center;
+                    
+                    ion-button{
+                        width: 60%;
+                        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+                        background-blend-mode: soft-light, normal;
+                        border: 1px solid rgba(255, 255, 255, 0.4);
+                        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+                        border-radius: 10px;
+                        
+                        span{
+                            color: #000;
+                            font-family: 'GFS Neohellenic', sans-serif;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .footer{
+                    justify-content: space-between;
+                    display: flex;
+                }
+            }
+        }
+
+    }
+
+// FOR CHANGE THE STYLING
+// .btn-change{
+//         background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EAECF0;
+//         background-blend-mode: soft-light, normal;
+//         border: 1px solid rgba(255, 255, 255, 0.4);
+//         box-shadow: inset -5px -5px 8px #F9FCFF, inset 5px 5px 7px rgba(174, 174, 192, 0.75);
+//         border-radius: 23.4899px;
+// }
+}
+
+
+

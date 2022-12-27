@@ -1,0 +1,71 @@
+<div class="main-container">
+  <div class="page">
+    <div class="btn"  routerLink="/home-main">
+      <ion-button color="primary-contrast">
+        <span>x</span>
+      </ion-button>
+    </div>
+    <div class="heading">
+      <h1>Renting</h1>
+      <h3>(if you want a vehicle for a set amount of time)</h3>
+      <br>
+      <hr color="grey" width="85%">
+    </div>
+    <div class="pickup">
+      <h3>Enter Pickup Location</h3>
+      <div class="location">
+        <input type="text" placeholder="Location">
+        <img src="assets/icon/dropdown.svg" alt="">
+      </div>
+      <div class="date">
+        <h3>Date for pickup</h3>
+        <div class="input">
+          <input type="date" name="" id="">
+          <!-- <img src="assets/icon/date.svg" alt=""> -->
+          <p>at</p>
+          <input type="time" name="" id="">
+          <!-- <img src="assets/icon/time.svg" alt=""> -->
+        </div>
+      </div>
+      <div class="package">
+        <h3>Choose a Package</h3>
+        <div class="input">
+          <input type="text" placeholder="Location">
+          <img src="assets/icon/dropdown.svg" alt=""> 
+        </div>
+      </div>
+      <div class="assist">
+        <div class="heading">
+          <h3>Do you want a driver to assist you?</h3>
+          <p>choosing to have a driver wil cause you additional charges</p>
+        </div>
+        <div class="button">
+          <!-- btn 1 -->
+          <ion-button color="primary-contrast">
+            <span>With Driver</span>
+          </ion-button>
+          <!-- btn 2 -->
+          <ion-button color="primary-contrast" (click)="driver()"  [class]="['bntStyle']">
+            <span>Without Driver</span>
+          </ion-button>
+        </div>
+        <div class="upload" *ngIf="upload">
+          <h3>Great! please add your Driver's license below.</h3>
+          <ion-button color="primary-contrast">
+            <span>Upload</span>
+            <input type="file" placeholder="Upload" >
+          </ion-button>
+        </div>
+        <div class="search" routerLink="/taxi-detailss">
+          <ion-button color="primary-contrast">
+            <span>Search</span>
+          </ion-button>
+        </div>
+        <div class="footer">
+          <img src="assets/img/LeftFlower.png" alt="">
+          <img src="assets/img/RightFlower.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,331 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+
+*{
+  animation-duration: 1.5s;
+}
+
 .main-container {
-    // text-align: center;
-    // height: max-content;
-    max-height: auto;
-    width: 100%;
-    overflow: scroll;
-    .first {
-      display: flex;
-      text-align: center;
+  // text-align: center;
+  // height: max-content;
+  max-height: auto;
+  width: 100%;
+  overflow: scroll;
+
+  .first {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+
+    .back-btn{
+      // border: 2px solid blue;
+      width: 31px;
+      height: 31px;
+      padding-top: 6px;
+      padding-left: 6px;
       margin-top: 10px;
-      .btn {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-        ion-button {
-          height: 40px;
-          --border-radius: 10px;
-          --background: #e0e0e0;
-          --box-shadow: 12px 13px 64px #bebebe;
-          --background-blend-mode: soft-light, normal;
-  
-          ion-icon {
-            color: #c4c9dc;
-            // font-weight: 900;
-            font-size: 25px;
-          }
-        }
-      }
-      .txt {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        color: #212638;
-        font-weight: 700;
-        font-size: 23px;
-        p {
-          margin-right: 76px;
-        }
-      }
-    }
-    .second {
+      margin-left: 25px;
+      margin-bottom: 10px;
+      background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+      background-blend-mode: soft-light, normal;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: -5px -5px 8px #f2f4f8, 5px 5px 7px rgb(174 174 192 / 50%);
+      border-radius: 10px;
+  }
+
+    .btn {
+      margin-left: 10px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      .txt {
-        border-top: 1px solid #e2e2e2;
-        border-bottom: 1px solid #e2e2e2;
-        width: 80%;
-        p {
-          font-family: "Helvetica";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 20px;
-          text-align: center;
-          letter-spacing: -0.408px;
-          color: #212638;
-        }
-      }
-    }
-    .third {
-      .box {
-        width: 87%;
-        margin: 20px;
-        margin-top: 68px;
-        background: linear-gradient(
-            138.32deg,
-            rgba(0, 0, 0, 0.5) 8.26%,
-            rgba(255, 255, 255, 0.5) 91.02%
-          ),
-          #eaecf0;
+
+      ion-button {
+        width: 37px;
+        // background: linear-gradient(138.32deg, rgba(154, 154, 154, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
         background-blend-mode: soft-light, normal;
         border: 1px solid rgba(255, 255, 255, 0.4);
-        box-shadow: -9px -8px 13px #f2f4f8, 8px 8px 13px rgb(174 174 192 / 50%);
-        border-radius: 13px;
-        height: 200px;
-        .suvimg {
-          position: relative;
-          bottom: 102px;
-          left: 23px;
-        }
-        .sedanimg {
-          position: relative;
-          bottom: 48px;
-          left: 51px;
-        }
-        .travellerimg {
-          position: relative;
-          bottom: 60px;
-          left: 94px;
-        }
-        .hatchbackimg {
-          position: relative;
-          bottom: 60px;
-          left: 44px;
-        }
-  
-        .txt {
-          bottom: 159px;
-          position: relative;
-          margin: 10px;
-          width: 93%;
-          h2 {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 42px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-bottom: 0;
-            margin-top: 2px;
-          }
-          p {
-            // font-family: 'Alegreya Sans';
-            // font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-top: 0;
-          }
-          .txt1 {
-            display: flex;
-            justify-content: end;
-            align-items: flex-end;
-            color: #ff9114;
-            // font-family: "Alegreya Sans";
-            // font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            margin-bottom: 0;
-          }
-        }
-        .txt12 {
-          bottom: 53px;
-          position: relative;
-          margin: 10px;
-          width: 93%;
-          h2 {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 42px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-bottom: 0;
-            margin-top: 2px;
-          }
-          p {
-            // font-family: 'Alegreya Sans';
-            // font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-top: 0;
-          }
-          .txt1 {
-            display: flex;
-            justify-content: end;
-            align-items: flex-end;
-            color: #ff9114;
-            // font-family: "Alegreya Sans";
-            // font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            margin-bottom: 0;
-          }
-        }
-        .txt123 {
-          bottom: 65px;
-          position: relative;
-          margin: 10px;
-          width: 93%;
-          h2 {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 42px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-bottom: 0;
-            margin-top: 2px;
-          }
-          p {
-            // font-family: 'Alegreya Sans';
-            // font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            color: #212638;
-            margin-top: 0;
-          }
-          .txt1 {
-            display: flex;
-            justify-content: end;
-            align-items: flex-end;
-            color: #ff9114;
-            // font-family: "Alegreya Sans";
-            // font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
-            letter-spacing: -0.408px;
-            margin-bottom: 0;
-          }
-        }
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 6px;
       }
-  
-      // -----------------------------btn----------------
-  
-      .btn {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        bottom: 160px;
-        left: 200px;
-        ion-button {
-          width: 80px;
-          height: 30px;
-          // --border-radius: 10px;
-          --background: #eff1f4;
-          // --box-shadow: 12px 13px 64px #bebebe;
-          --background-blend-mode: soft-light, normal;
-          --border-radius: 40px;
-  // --background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  --box-shadow:  18px 18px 22px #ffffff,
-               -18px -18px 22px #ffffff;
-  
-          ion-icon {
-            color: #c4c9dc;
-            // font-weight: 900;
-            font-size: 25px;
-          }
-        }
+    }
+
+    .txt {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: #212638;
+      font-weight: 700;
+      font-size: 23px;
+      font-family: 'Noto Sans', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 0;
+
+      p {
+        margin-right: 76px;
+        margin-top: 2px;
       }
-  
-      // ----------------BTN1--------------------
-  
-      .btn1 {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        bottom: 51px;
-        left: 200px;
-        ion-button {
-          width: 80px;
-          height: 30px;
-          // --border-radius: 10px;
-          --background: #eff1f4;
-          // --box-shadow: 12px 13px 64px #bebebe;
-          --background-blend-mode: soft-light, normal;
-          --border-radius: 40px;
-  // --background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  --box-shadow:  18px 18px 22px #ffffff,
-               -18px -18px 22px #ffffff;
-  
-          ion-icon {
-            color: #c4c9dc;
-            // font-weight: 900;
-            font-size: 25px;
-          }
-        }
-      }
-  
-      // ---------------btn2-------------------
+    }
+  }
+
+  .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .txt {
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      width: 80%;
       
-      .btn2 {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
+      p {
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.408px;
+        color: #212638;
+        margin: 10px;
+      }
+    }
+  }
+// 
+  .third {
+    .box {
+      width: 87%;
+      margin: 20px;
+      margin-top: 68px;
+      background: linear-gradient(138.32deg,
+          rgba(0, 0, 0, 0.5) 8.26%,
+          rgba(255, 255, 255, 0.5) 91.02%),
+        #eaecf0;
+      background-blend-mode: soft-light, normal;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: -9px -8px 13px #f2f4f8, 8px 8px 13px rgb(174 174 192 / 50%);
+      border-radius: 13px;
+      height: 200px;
+
+      .suvimg {
         position: relative;
-        bottom: 66px;
-        left: 200px;
-        ion-button {
-          width: 80px;
-          height: 30px;
-          // --border-radius: 10px;
-          --background: #eff1f4;
-          // --box-shadow: 12px 13px 64px #bebebe;
-          --background-blend-mode: soft-light, normal;
-          --border-radius: 40px;
-  // --background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  --box-shadow:  18px 18px 22px #ffffff,
-               -18px -18px 22px #ffffff;
-  
-          ion-icon {
-            color: #c4c9dc;
-            // font-weight: 900;
-            font-size: 25px;
-          }
+        bottom: 102px;
+        left: 23px;
+      }
+
+      .sedanimg {
+        position: relative;
+        bottom: 48px;
+        left: 51px;
+      }
+
+      .travellerimg {
+        position: relative;
+        bottom: 60px;
+        left: 94px;
+      }
+
+      .hatchbackimg {
+        position: relative;
+        bottom: 60px;
+        left: 44px;
+      }
+
+      .txt {
+        bottom: 159px;
+        position: relative;
+        margin: 10px;
+        width: 93%;
+        font-family: 'Noto Sans', sans-serif;
+
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 42px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-bottom: 0;
+          margin-top: 2px;
+        }
+
+        p {
+          // font-family: 'Alegreya Sans';
+          // font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-top: 0;
+        }
+
+        .txt1 {
+          display: flex;
+          justify-content: end;
+          align-items: flex-end;
+          color: #ff9114;
+          // font-family: "Alegreya Sans";
+          // font-style: normal;
+          // font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          margin-bottom: 0;
+          font-family: 'Noto Sans', sans-serif;
         }
       }
-      // ---------------btn3-------------------
-  
-      .btn3 {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
+
+      .txt12 {
+        bottom: 53px;
         position: relative;
-        bottom: 59px;
-        left: 200px;
-        ion-button {
-          width: 80px;
-          height: 30px;
-          // --border-radius: 10px;
-          --background: #eff1f4;
-          // --box-shadow: 12px 13px 64px #bebebe;
-          --background-blend-mode: soft-light, normal;
-          --border-radius: 40px;
-  // --background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  --box-shadow:  18px 18px 22px #ffffff,
-               -18px -18px 22px #ffffff;
-  
-          ion-icon {
-            color: #c4c9dc;
-            // font-weight: 900;
-            font-size: 25px;
-          }
+        margin: 10px;
+        width: 93%;
+        font-family: 'Noto Sans', sans-serif;
+
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 42px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-bottom: 0;
+          margin-top: 2px;
+        }
+
+        p {
+          // font-family: 'Alegreya Sans';
+          // font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-top: 0;
+        }
+
+        .txt1 {
+          display: flex;
+          justify-content: end;
+          align-items: flex-end;
+          color: #ff9114;
+          // font-family: "Alegreya Sans";
+          // font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          margin-bottom: 0;
+          font-family: 'Noto Sans', sans-serif;
+        }
+      }
+
+      .txt123 {
+        bottom: 65px;
+        position: relative;
+        margin: 10px;
+        width: 93%;
+        font-family: 'Noto Sans', sans-serif;
+
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 42px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-bottom: 0;
+          margin-top: 2px;
+        }
+
+        p {
+          // font-family: 'Alegreya Sans';
+          // font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          color: #212638;
+          margin-top: 0;
+        }
+
+        .txt1 {
+          display: flex;
+          justify-content: end;
+          align-items: flex-end;
+          color: #ff9114;
+          // font-family: "Alegreya Sans";
+          // font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.408px;
+          margin-bottom: 0;
+          font-family: 'Noto Sans', sans-serif;
+        }
+      }
+    }
+
+    // -----------------------------btn----------------
+
+    .btn {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 160px;
+      left: 200px;
+
+      ion-button {
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 20px;
+
+      ion-icon {
+          color: #c4c9dc;
+          // font-weight: 900;
+          font-size: 25px;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    // ----------------BTN1--------------------
+
+    .btn1 {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 51px;
+      left: 200px;
+
+      ion-button {
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 20px;
+
+      ion-icon {
+          color: #c4c9dc;
+          // font-weight: 900;
+          font-size: 25px;
+          border-radius: 30px;
+        }
+      
+      }
+    }
+
+    // ---------------btn2-------------------
+
+    .btn2 {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 66px;
+      left: 200px;
+
+      ion-button {
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 20px;
+
+      ion-icon {
+          color: #c4c9dc;
+          // font-weight: 900;
+          font-size: 25px;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    // ---------------btn3-------------------
+
+    .btn3 {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 59px;
+      left: 200px;
+
+      ion-button {
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 8px #F2F4F8, 5px 5px 7px rgba(174, 174, 192, 0.5);
+        border-radius: 20px;
+
+      ion-icon {
+          color: #c4c9dc;
+          // font-weight: 900;
+          font-size: 25px;
+          border-radius: 30px;
         }
       }
     }
   }
-  
 
+  // 
+}
