@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule, IonicRouteStrategy, IonicSwiper } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +19,26 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { AgmCoreModule } from '@agm/core';
+import { DataProvidersService } from './services/dataProviders/data-providers.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SwiperModule } from 'swiper/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserPageModule } from './user/user.module';
+import { ToursPackagesPageModule } from './tours-packages/tours-packages.module';
+import { ToursPageModule } from './tours/tours.module';
+import { TaxiBookingPageModule } from './taxi-booking/taxi-booking.module';
+import { TaxiDetailssPageModule } from './taxi-detailss/taxi-detailss.module';
+import { ReviewPagePageModule } from './review-page/review-page.module';
+import { RentingPageModule } from './renting/renting.module';
+import { RegistrationPageModule } from './registration/registration.module';
+import { PaymentPageModule } from './payment/payment.module';
+import { OutstationPageModule } from './outstation/outstation.module';
+import { LoadingPageModule } from './loading/loading.module';
+import { HomeMainPageModule } from './home-main/home-main.module';
+import { GetStartedPageModule } from './get-started/get-started.module';
+import { BookingHistoryPageModule } from './booking-history/booking-history.module';
+import { BlogPageModule } from './blog/blog.module';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -39,12 +58,27 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     provideMessaging(() => getMessaging()), 
     providePerformance(() => getPerformance()), 
     provideRemoteConfig(() => getRemoteConfig()), 
-    provideStorage(() => getStorage()),
-    // AgmCoreModule.forRoot({
-    //   apiKey: ''
-    // })
+    provideStorage(() => getStorage()), NgbModule,
+    SwiperModule,
+    BrowserAnimationsModule,
+    UserPageModule,
+    ToursPackagesPageModule,
+    ToursPageModule,
+    TaxiBookingPageModule,
+    TaxiDetailssPageModule,
+    ReviewPagePageModule,
+    RentingPageModule,
+    RegistrationPageModule,
+    PaymentPageModule,
+    OutstationPageModule,
+    LoadingPageModule,
+    HomeMainPageModule,
+    GetStartedPageModule,
+    BookingHistoryPageModule,
+    BlogPageModule,
+    
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, ScreenTrackingService,UserTrackingService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, ScreenTrackingService,UserTrackingService, DataProvidersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,52 @@
+<div class="page">
+  <div class="main-container">
+
+    <div class="header">
+      <div class="back-btn"><ion-icon name="chevron-back-outline" routerLink="/blog"></ion-icon></div>
+      <div class="heading">
+        <h3>Blog Section</h3>
+      </div>
+    </div>
+
+
+    <div class="places">
+      <div class="card" routerLink="blog-details">
+        <!-- <img src="assets/img/indiagate.png" alt=""> -->
+        <img [src] = "dataprovider.blogData.image">
+        <div class="content">
+          <h4>{{dataprovider.blogData.title}}</h4>
+          <div class="date">
+            <p>October 9th,2022</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor, ante vel luctus ultricies, magna
+            tellus ornare enim, nec vulputate ante magna et nunc. Aenean vehicula augue orci, eu hendrerit nunc
+            hendrerit vitae. Curabitur sollicitudin nulla ac urna elementum, eu euismod nisi imperdiet. Proin quis
+            tincidunt eros, venenatis bibendum metus. Suspendisse potenti. Quisque ultrices rhoncus tristique. Integer
+            eget velit ut tellus facilisis blandit.
+            Integer pharetra eleifend libero, vel blandit justo placerat non. Vestibulum sit amet dapibus ligula, at
+            elementum tellus. Mauris pellentesque libero ut varius congue. Pellentesque malesuada viverra tempus. Donec
+            facilisis urna nunc. Quisque iaculis sapien eu mi tempus aliquet. Etiam varius et ante mattis tincidunt.
+            Suspendisse et tincidunt leo. Donec sit amet aliquet nulla.
+            Mauris lacinia leo dolor, non lobortis nisi imperdiet sed. Etiam nisl metus, facilisis dapibus metus ac,
+            facilisis blandit nulla. Sed pharetra ut metus eu sodales. Vivamus in pretium eros. Ut in volutpat sapien,
+            id condimentum ante. Proin vel massa bibendum, finibus metus eu, porttitor felis. Vivamus laoreet volutpat
+            porttitor. Duis ultricies erat et facilisis tempus. Praesent tempus gravida elit, ut suscipit tortor
+            pellentesque sed. Integer hendrerit, purus viverra facilisis lacinia, quam diam vestibulum ante, id cursus
+            leo diam vel magna.
+            Maecenas purus odio, feugiat sit amet leo vitae, imperdiet gravida risus. Sed felis quam, congue id metus
+            sit amet, posuere dictum quam. Sed scelerisque ligula ac erat sollicitudin eleifend. Suspendisse ut dolor
+            ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id erat nec diam sodales
+            ultricies. Morbi in ipsum convallis, feugiat diam id, feugiat est..
+          </p>
+          <!-- <p>{{dataprovider.blogData.body}}</p> -->
+        </div>
+        <nav>By <span>{{dataprovider.blogData.author}} from Rajputana Cabs</span> </nav>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <img src="assets/img/footer.svg" alt="">
+  </div>
+</div>

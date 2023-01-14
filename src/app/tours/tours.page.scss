@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+.main-container {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+
+    .header {
+        display: flex;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0;
+
+        .btn {
+            margin-left: 0px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+
+        .back-btn {
+            width: 35px;
+            height: 35px;
+            padding-top: 4px;
+            padding-left: 2px;
+            margin-left: 25px;
+            background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #EAECF0;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: -5px -5px 8px #f2f4f8, 5px 5px 7px rgb(174 174 192 / 50%);
+            border-radius: 10px;
+        }
+
+        .txt {
+            // border: 2px solid red;
+            width: 100%;
+            position: relative;
+            color: #212638;
+            font-weight: 700;
+            font-size: 23px;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 0;
+            text-align: center;
+
+            p {
+                margin: 0;
+                margin-right: 55px;
+                margin-top: 3px;
+            }
+        }
+
+
+
+    }
+
+    .collage {
+        margin: 2em 1.4em;
+
+        .img1 {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img2 {
+            margin: 1em 0;
+            justify-content: space-between;
+            display: flex;
+        }
+    }
+
+    ion-item-divider {
+        width: 70%;
+        margin: auto;
+        min-height: 1px;
+    }
+
+    .places {
+        // border: 2px solid red;
+        margin: 1em 1.4em;
+
+        #day {
+            // border: 2px solid blue;
+            margin-bottom: 0;
+            font-family: 'Helvetica';
+            font-weight: 400;
+            font-size: 12px;
+            color: #FF9114;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+
+        }
+
+        #place {
+            display: flex;
+            // border: 2px solid green;
+            justify-content: space-between;
+            margin-top: 0;
+
+            #first {
+                text-align: left;
+
+                #place1 {
+                    margin: 0;
+                    font-size: 18px;
+                    color: #404B69;
+                    font-weight: bold;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                #journey {
+                    margin: 0;
+                    font-size: 12px;
+                    color: #747474;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+            }
+
+
+            #second {
+                text-align: right;
+
+                #place2 {
+                    margin: 0;
+                    font-size: 16px;
+                    color: #198024;
+                    font-weight: bold;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                #journey {
+                    margin: 0;
+                    font-size: 12px;
+                    color: #747474;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+            }
+
+
+        }
+    }
+
+    .map {
+        margin: 4em 1.4em 1em 1.4em;
+
+        h4 {
+            font-size: 18px;
+            color: #404B69;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+    }
+
+    .price {
+        margin: 4em 1.4em 2em 1.4em;
+
+        h4 {
+            font-size: 18px;
+            color: #404B69;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ion-grid {
+            background: linear-gradient(138.32deg, rgba(0, 0, 0, 0.5) 8.26%, rgba(255, 255, 255, 0.5) 91.02%), #FFFFFF;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: -9px -8px 13px #F2F4F8, 8px 8px 13px rgba(174, 174, 192, 0.5);
+            border-radius: 13px;
+            
+            ion-row {
+                
+                
+                ion-col {
+                    font-family: 'Lato';
+                    font-size: 11px;
+
+                    h2 {
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer{
+        margin-top: 3em;
+    }
+
+}

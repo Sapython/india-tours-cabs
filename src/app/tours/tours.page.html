@@ -1,0 +1,123 @@
+<div class="main-container">
+  <div class="header">
+    <div class="btn">
+      <div class="back-btn" routerLink="/tours-packages">
+        <img src="assets/icon/back.png">
+      </div>
+    </div>
+    <div class="txt">
+      <p>Tours</p>
+    </div>
+  </div>
+  <div class="collage">
+    <div class="img1"><img src="assets/img/indiagate.png"></div>
+    <div class="img2">
+      <img src="assets/img/mini-indiagate.png" alt="">
+      <img src="assets/img/mini-lotustemple.png" alt="">
+      <img src="assets/img/mini-charminar.png" alt="">
+      <img src="assets/img/mani-minar.png" alt="">
+    </div>
+  </div>
+  <ion-item-divider></ion-item-divider>
+  <div class="places">
+    <!-- box - 1 -->
+    <p id="day">5 Days - 4 Night</p>
+
+    <!-- box - 2 -->
+    <p id="place">
+      <span id="first">
+        <p id="place1">Delhi Agra</p>
+        <p id="journey">A Journey into nature</p>
+        <p id="journey">Start Location: Jaipur</p>
+      </span>
+      <span id="second">
+        <p id="place2">₹20,000</p>
+        <p id="journey">No. of Stoppage : 4</p>
+        <p id="journey">End Location: Delhi</p>
+      </span>
+    </p>
+  </div>
+  <div class="map">
+    <h4>Itinerary</h4>
+    <img src="assets/img/stepper.png" alt="">
+
+    <!-- material stepper starts -->
+    <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+      {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+    </button>
+    <mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Fill out your name</ng-template>
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Fill out your address</ng-template>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                   required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+      </mat-step>
+    </mat-stepper> -->
+    
+    <!-- material stepper ends -->
+  </div>
+  <div class="price">
+    <h4>Detailed Tour Price</h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col><h2>Room Type</h2></ion-col>
+        <ion-col><h2>Basic Type</h2></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Single Occupancy</ion-col>
+        <ion-col>₹46,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Twin Sharing</ion-col>
+        <ion-col>₹34,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Triple Sharing</ion-col>
+        <ion-col>₹8,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Infant</ion-col>
+        <ion-col>₹28,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Child (5 - 11) With Mattress</ion-col>
+        <ion-col>₹23,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Child (2 - 4)</ion-col>
+        <ion-col>₹27,000</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="footer">
+    <img src="assets/img/footer.svg" alt="">
+  </div>
+</div>

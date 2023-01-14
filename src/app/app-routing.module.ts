@@ -5,7 +5,7 @@ import { AuthGuard } from './guards/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'registration',
+    redirectTo: 'home-main',
     // redirectTo: 'renting',
     // redirectTo: 'outstation',
     // redirectTo: 'payment',
@@ -92,6 +92,21 @@ const routes: Routes = [
     path: 'outstation',
     loadChildren: () => import('./outstation/outstation.module').then( m => m.OutstationPageModule)
   },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
+    path: 'tours-packages',
+    loadChildren: () => import('./tours-packages/tours-packages.module').then( m => m.ToursPackagesPageModule)
+  },
+  {
+    path: 'tours',
+    loadChildren: () => import('./tours/tours.module').then( m => m.ToursPageModule)
+  },
+
+
+
 
 
 ];
