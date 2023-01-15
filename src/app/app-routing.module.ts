@@ -86,38 +86,73 @@ const routes: Routes = [
   },
   {
     path: 'renting',
-    loadChildren: () => import('./renting/renting.module').then( m => m.RentingPageModule)
+    loadChildren: () =>
+      import('./renting/renting.module').then((m) => m.RentingPageModule),
   },
   {
     path: 'outstation',
-    loadChildren: () => import('./outstation/outstation.module').then( m => m.OutstationPageModule)
+    loadChildren: () =>
+      import('./outstation/outstation.module').then(
+        (m) => m.OutstationPageModule
+      ),
   },
   {
     path: 'blog',
-    loadChildren: () => import('./blog/blog.module').then( m => m.BlogPageModule)
+    loadChildren: () =>
+      import('./blog/blog.module').then((m) => m.BlogPageModule),
   },
   {
     path: 'tours-packages',
-    loadChildren: () => import('./tours-packages/tours-packages.module').then( m => m.ToursPackagesPageModule)
+    loadChildren: () =>
+      import('./tours-packages/tours-packages.module').then(
+        (m) => m.ToursPackagesPageModule
+      ),
   },
   {
     path: 'tours',
-    loadChildren: () => import('./tours/tours.module').then( m => m.ToursPageModule)
+    loadChildren: () =>
+      import('./tours/tours.module').then((m) => m.ToursPageModule),
   },
   {
     path: 'example',
     loadChildren: () =>
       import('./examples/examples.module').then((m) => m.ExamplesModule),
   },
-  { path: 'blogs', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
-  { path: 'blogsDetails', loadChildren: () => import('./blogs-details/blogs-details.module').then(m => m.BlogsDetailsModule) },
-  { path: 'contactUs', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) },
-  { path: 'aboutUs', loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule) },
+  {
+    path: 'blogs',
+    loadChildren: () =>
+      import('./blogs/blogs.module').then((m) => m.BlogsModule),
+  },
+  {
+    path: 'blogsDetails',
+    loadChildren: () =>
+      import('./blogs-details/blogs-details.module').then(
+        (m) => m.BlogsDetailsModule
+      ),
+  },
+  {
+    path: 'contactUs',
+    loadChildren: () =>
+      import('./contact-us/contact-us.module').then((m) => m.ContactUsModule),
+  },
+  {
+    path: 'aboutUs',
+    loadChildren: () =>
+      import('./about-us/about-us.module').then((m) => m.AboutUsModule),
+  },
 
-
-
-
-
+  {
+    path: 'busRental',
+    loadChildren: () =>
+      import('./bus-rental/bus-rental.module').then((m) => m.BusRentalModule),
+  },
+  {
+    path: 'rentalAgency',
+    loadChildren: () =>
+      import('./rental-agency/rental-agency.module').then(
+        (m) => m.RentalAgencyModule
+      ),
+  },
 ];
 
 @NgModule({

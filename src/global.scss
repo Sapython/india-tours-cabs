@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,17 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-@import 'remixicon/fonts/remixicon.css'
-@import 'remixicon/fonts/remixicon.css';
-@import url('./assets/scss/Fonts.scss');
-@import url('./assets/scss/Text.scss');
-@import url('./assets/scss/Responsive.scss');
+@import "remixicon/fonts/remixicon.css";
+@import "remixicon/fonts/remixicon.css";
+@import url("./assets/scss/Fonts.scss");
+@import url("./assets/scss/Text.scss");
+@import url("./assets/scss/Responsive.scss");
 
-
-body{
-    background-color: #ffff !important;
+body {
+  background-color: #ffff !important;
 }
 
-.ion-page{
-    overflow: scroll !important;
+.ion-page {
+  overflow: scroll !important;
 }
