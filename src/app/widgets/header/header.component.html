@@ -1,26 +1,36 @@
-<div>
-    <button (click)="sidebarOpen=!sidebarOpen" class="btn btn-icon-only btn-primary" type="button" aria-label="love button" title="love button">
-        <i class="ri-menu-3-line"></i>
-    </button>
-</div>
+<ion-header *ngIf="this.router.url != '/home-main'">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="back"> 
+        <ion-back-button defaultHref="home"><ion-icon name="chevron-back-outline"></ion-icon></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-buttons>
+        <ion-button routerLink="/notifications" (click)="notification()"><ion-icon name="notifications-outline"></ion-icon></ion-button>
+        <ion-button>
+          <div class="avatar" (click)="profile()">
+            <img *ngIf="this.dataProvider.user" referrerPolicy="no-referrer" [src]="this.dataProvider.user.photoURL" />
+          </div>
+        </ion-button>
+      </ion-buttons>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-<section [class]="sidebarOpen ? 'open' : 'close'">
-    <div class="detail">
-        <div class="user">
-            <img [src]="userImage" referrerPolicy="no-referrer">
-            <p>{{userName}}</p>
+<ion-header *ngIf="this.router.url == '/home-main'">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button><img src="assets/icon/headerSidebar.png" alt=""></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/notifications"  (click)="notification()"><ion-icon name="notifications-outline"></ion-icon></ion-button>
+      <ion-button routerLink="/profile" (click)="profile()">
+        <div class="avatar">
+          <img *ngIf="this.dataProvider.user"  [src]="this.dataProvider.user.photoURL" />
         </div>
-        <button class="btn btn-icon-only btn-primary" type="button" (click)="sidebarOpen=!sidebarOpen" aria-label="love button" title="love button">
-            <i class="ri-close-fill"></i>
-        </button>
-    </div>
-    <button *ngFor="let link of links" [routerLink]="link.link" class="btn btn-primary animate-right-3" type="button">
-        <p><i [class]="link.icon"></i> {{link.text}}</p>
-    </button>
-
-    <button class="btn btn-primary animate-right-3 logout" type="button">
-        <p><i class="ri-logout-box-r-fill"></i> Logout</p>
-    </button>
-
-</section>
-<div class="overlay" *ngIf="sidebarOpen"></div>
+      </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

@@ -1,50 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { DataProvidersService } from 'src/app/services/dataProviders/data-providers.service';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Input() title: String = '';
+  constructor(public router:Router,private navController: NavController, public dataProvider:DataProvidersService) { }
 
-  constructor() { }
-  links:Link[] = [
-    {
-      icon: "ri-pencil-line",
-      text: "Edit",
-      link: "/edit"
-    },
-    {
-      icon: "ri-pencil-line",
-      text: "Edit",
-      link: "/edit"
-    },
-    {
-      icon: "ri-pencil-line",
-      text: "Edit",
-      link: "/edit"
-    },
-    {
-      icon: "ri-pencil-line",
-      text: "Edit",
-      link: "/edit"
-    },
-    {
-      icon: "ri-pencil-line",
-      text: "Edit",
-      link: "/edit"
-    },
-  ]
-  userName= "Saptam"
-  userImage = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-  sidebarOpen: boolean = false;
-  ngOnInit(): void {
+  ngOnInit() {}
+
+  back(){
+    this.navController.setDirection('back');
+    const firstRoute = this.router.url;
+    this.navController.pop()
+    setTimeout(() => {
+      console.log("navigated",firstRoute,this.router.url);
+      if  (firstRoute == this.router.url){
+        this.navController.navigateBack('/home');
+      }
+    },10)
   }
 
-}
+  notification(){
+    this.navController.navigateBack('/notifications');
+  }
 
-type Link = {
-  icon:string,
-  text:string,
-  link:string
+  profile(){
+    this.navController.navigateBack('/profile');
+  }
+
 }

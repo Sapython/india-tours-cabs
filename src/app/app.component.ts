@@ -65,4 +65,16 @@ export class AppComponent {
       }
     });
   }
+
+  home(){
+    this.router.navigateByUrl('main-home')
+  }
+
+  profile(){
+    this.router.navigateByUrl('user')
+  }
+
+  tours(){
+    this.router.navigateByUrl('tours')
+  }
 }
