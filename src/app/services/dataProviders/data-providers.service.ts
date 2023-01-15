@@ -8,5 +8,8 @@ export class DataProvidersService {
   constructor() { 
   }
 
-  blogData: any
+  blogData: any;
+  public LoggedInUser : boolean = false;
+  public user:any;
+  public loading:boolean = false;
 }

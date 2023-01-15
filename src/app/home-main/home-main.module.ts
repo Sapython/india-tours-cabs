@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HomeMainPageRoutingModule } from './home-main-routing.module';
 
 import { HomeMainPage } from './home-main.page';
+import { WidgetsModule } from '../widgets/widgets.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { HomeMainPage } from './home-main.page';
     FormsModule,
     IonicModule,
     HomeMainPageRoutingModule,
+    WidgetsModule
   ],
   declarations: [HomeMainPage]
 })
