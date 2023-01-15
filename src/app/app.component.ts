@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 import { doc, docData, Firestore } from '@angular/fire/firestore';
 import { Auth, authState, User } from '@angular/fire/auth';
 import { EMPTY, Observable, Subject } from 'rxjs';
-import { Platform, PopoverController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { AuthenticationService } from './services/authentication.service';
 import { DataProvidersService } from './services/dataProviders/data-providers.service';
 import { urls } from './services/urls';
