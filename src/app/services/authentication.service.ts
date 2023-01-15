@@ -24,7 +24,7 @@ export class AuthenticationService {
     signInWithPopup(this.auth, new GoogleAuthProvider()).then(
       async (credentials: UserCredential) => {
         this.user = credentials.user;
-        this.route.navigate(['/get-started']);
+        this.route.navigate(['/home-main']);
       }
     );
   }
